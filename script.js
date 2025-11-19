@@ -1,6 +1,5 @@
 // Inicializar EmailJS con tu clave pública
-// Reemplaza "TU_CLAVE_PUBLICA_EMAILJS" con tu Public Key de EmailJS
-emailjs.init("TU_CLAVE_PUBLICA_EMAILJS");
+emailjs.init("-TNGwUlo26BNoSmCT");
 
 document.getElementById('personalDataForm').addEventListener('submit', function(event) {
     event.preventDefault();
@@ -11,8 +10,8 @@ document.getElementById('personalDataForm').addEventListener('submit', function(
     const phone = document.getElementById('phone').value;
     const message = document.getElementById('message').value;
 
-    // Reemplaza con tu Service ID y Template ID de EmailJS
-    emailjs.send("TU_SERVICE_ID", "TU_TEMPLATE_ID", {
+    // Usando tus Service ID y Template ID
+    emailjs.send("service_ojzlb8c", "template_qfbj6rg", {
         firstName: firstName,
         lastName: lastName,
         email: email,
